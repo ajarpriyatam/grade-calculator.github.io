@@ -94,7 +94,6 @@ section .app-from-button{
         padding-bottom: 0px;
     }
     section{
-        background-color: orange;
         height: 50vh;
         border-radius: 10px ;
         padding-top: 30px;
