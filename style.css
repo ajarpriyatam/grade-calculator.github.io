@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 80vh;
+    width: 100vw;
+    background-color: teal;
+    padding-top: 20vh;
+}
+.main{
+    height: 70vh;
+    width: 50vw;
+    background-color: orange;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 10px;
+    margin: auto;
+}
+.app-form{
+    display: flex;
+}
+header{
+    padding-top: 100px;
+}
+header p{
+    font-size: 40px;
+    color: black;
+    height: 170px;
+    padding-top: 30px;
+    width: 150px;
+    padding-left: 10px;
+    margin-left: 20px;
+    border-left: 10px solid black;
+}
+section{
+    padding-top: 50px;
+    margin-left: 80px;
+}
+section .app-form-group .app-from-control{
+    width: 350px;
+    height: 35px;
+    margin-top: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 16px;
+    background: none;
+    border-bottom: 2px solid black;
+}
+section .button{
+    display: flex;
+}
+section .app-from-button{
+    width: 180px;
+    background: black;
+    border: none;
+    color: orange;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 8px;
+    height: 30px;
+}
+.main  .showdata{
+    text-align: center;
+    width: 36vw;
+    margin-top: 50px;
+    margin-left: 7vw;
+}
+.main  .showdata p{
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+.main  .showdata p span{
+    color:brown;
+    font-weight: bold;
+}
+.caption{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.caption span{
+    color: rgb(219, 156, 20);
+}
+@media(max-width:490px){
+    .main{
+        width: 80vw;
+    }
+    header{
+        padding-bottom: 0px;
+    }
+    section{
+        background-color: orange;
+        height: 80vh;
+        border-radius: 10px ;
+        padding-top: 30px;
+        margin-left: 0px;
+        width: 82vw;
+        margin-top:100px ;
+        padding-left: 20px;
+    }
+    .app-form{
+        flex-direction: column;
+        margin-left: -10px;
+    }
+    section .button{
+        display: flex;
+        flex-direction: column;
+    }
+    section .app-from-button{
+        margin-left: 90px;
+        width: 160px;
+        margin-top: 30px;
+    }
+    .caption{
+        text-align: center;
+        margin-top: 650px;
+        padding-bottom: 20px;
+    }
+    .main  .showdata{
+        text-align: center;
+        width: 60vw;
+        margin-top: -85px;
+        margin-left: 11vw;
+    }
+    .main{
+        height: 50vh;
+    }
+}
