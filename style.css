@@ -74,10 +74,6 @@ section .app-from-button{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: black;
 }
-.main  .showdata p span{
-    color:brown;
-    font-weight: bold;
-}
 .caption{
     font-size: 20px;
     text-align: center;
@@ -85,6 +81,14 @@ section .app-from-button{
 }
 .caption span{
     color: rgb(219, 156, 20);
+}
+#red{
+    font-weight: bold;
+    color: red;
+}
+#green{
+    font-weight: bold;
+    color: green;
 }
 @media(max-width:490px){
     .main{
@@ -94,7 +98,8 @@ section .app-from-button{
         padding-bottom: 0px;
     }
     section{
-        height: 50vh;
+        background-color: orange;
+        height: 80vh;
         border-radius: 10px ;
         padding-top: 30px;
         margin-left: 0px;
@@ -106,25 +111,29 @@ section .app-from-button{
         flex-direction: column;
         margin-left: -10px;
     }
+    section .app-form-group .app-from-control{
+        width: 300px;
+    }
     section .button{
         display: flex;
         flex-direction: column;
     }
     section .app-from-button{
-        margin-left: 90px;
+        margin-left: 80px;
         width: 160px;
         margin-top: 30px;
     }
     .caption{
         text-align: center;
-        margin-top: 750px;
+        margin-top: 650px;
         padding-bottom: 20px;
     }
     .main  .showdata{
         text-align: center;
         width: 60vw;
-        margin-top: -85px;
+        margin-top: -125px;
         margin-left: 11vw;
+        margin-bottom: 200px;
     }
     .main{
         height: 50vh;
