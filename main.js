@@ -1,8 +1,4 @@
-console.log("prince");
-
 let click = document.getElementById("click")
-
-
 click.addEventListener("click",()=>{
     let hindi =document.getElementById("hindi").value;
     let english =document.getElementById("english").value;
@@ -17,9 +13,7 @@ click.addEventListener("click",()=>{
     }
     else{
         let total = parseFloat(hindi)+parseFloat(math)+parseFloat(science)+parseFloat(ss)+parseFloat(sanskrit)+parseFloat(english);
-        console.log(total);
         let percent = (total/600)*100;
-        console.log(percent)
         if(percent <= 100 &&percent >=90){
             grade="S";
         }else if(percent<=89 &&percent >=80){
@@ -43,14 +37,19 @@ click.addEventListener("click",()=>{
         else{
             grade="G"
         }
-        console.log(grade)
         if(grade =="G"){
             result = "Fail"
         }
         else{
             result = "Pass"
         }
-        document.getElementById("showdata").innerHTML =`Your total is <span>${total}</span> Out of 600 and Percentage is <span>${percent}%</span> and Garde is <span>${grade}</span> and you <span>${result}</span>. `
+        
+        if(percent>33){
+            document.getElementById("showdata").innerHTML =`Your total is <span id = "green">${total}</span> Out of 600 and Percentage is <span id = "green">${percent}%</span> and Garde is <span id= "green">${grade}</span> and you <span id = "green">${result}</span>. `
+        }
+        else{
+            document.getElementById("showdata").innerHTML =`Your total is <span id = "red">${total}</span> Out of 600 and Percentage is <span id = "red">${percent}%</span> and Garde is <span id= "red">${grade}</span> and you <span id = "red">${result}</span>. `
+        }
     }
     
 
