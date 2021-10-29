@@ -67,7 +67,6 @@ click1.addEventListener("click",()=>{
     document.getElementById("english").value="";
 
     document.getElementById("showdata").innerHTML="";
-    console.log("prince")
 })
 
 
